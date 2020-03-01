@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(120deg, #379683 0%, #379683 10%, #edf5e1 10%, #edf5e1 90%, #379683 90%, #379683 100%);
+}
+header{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.image_inp, .submit{
+    margin:0;
+    padding: 2px 5px;
+    outline:0;
+}
+.submit:hover{
+    background-color: inherit;
+    cursor: pointer;
+}

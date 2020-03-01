@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(120deg, #379683 0%, #379683 10%, #edf5e1 10%, #edf5e1 90%, #379683 90%, #379683 100%);
+}
+.heading{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.red,.green,.blue{
+    width: 33vw;
+    padding : 30px;
+}
+.blue_cap{
+    display: inline;
+    margin-left: 200px;
+}
+.green_cap{
+    display: inline;
+    margin-left: 400px;
+}
+.red_cap{
+    display: inline;
+    margin-left: 400px;
+}
+.submit{
+    padding: 10px;
+    cursor: pointer;
+    
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
