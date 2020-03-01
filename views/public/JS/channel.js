@@ -1,1 +1,1 @@
-fetch()
+document.querySelector('.blue').src = './uploads/image_blue.jpg'
