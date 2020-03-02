@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const spawn = require('child_process').spawn;
 const hbs = require('hbs');//adding template engine
 const multer = require('multer');//file uploading helper
 const app = express();
@@ -27,14 +28,16 @@ app.get('/', (req, res) =>{
 })
 
 app.post('/channel', upload.single('image'), (req, res) =>{
-  const spawn = require('child_process').spawn;
       const process = spawn('python' ,['./imageChanneler.py']);
       process.stdout.on('end',(err, data)=>{
         res.render('channel');
       })
 })
 app.get('/merge', (req, res)=>{
-
+  const process = spawn('python', ['./mergeChannel.py']);
+  process.stdout.on('end', (err, data)=>{
+    res.render('merge')
+  })
 })
 app.listen(PORT, function(){
     console.log('successful!!!')

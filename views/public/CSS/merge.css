@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(120deg, #379683 0%, #379683 10%, #edf5e1 10%, #edf5e1 90%, #379683 90%, #379683 100%);
+}
+.container{
+    position: absolute;
+    left: 500px;
+}
+img{
+    height: 40vh;
+    margin: 30px;
+}
